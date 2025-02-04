@@ -247,7 +247,21 @@ footer {
   padding: 1rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
   .mobile-menu-btn {
     display: block;
   }
@@ -268,24 +282,70 @@ footer {
     display: flex;
   }
 
+  body {
+    font-size: 16px;
+  }
+
+  .hero {
+    height: 60vh;
+    padding: 1rem;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+
   .hero h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
-  .logo-img {
-    height: 30px;
-  }
-
-  section {
-    padding: 3rem 1rem;
+  .hero p {
+    font-size: 1rem;
   }
 
   .services-grid {
     grid-template-columns: 1fr;
-    padding: 0 1rem;
+    gap: 1.5rem;
   }
-  
+
   .service-card {
     padding: 1.5rem;
+    transform: none;
+  }
+
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .social-link-container {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 50vh;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
   }
 }
