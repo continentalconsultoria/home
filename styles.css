@@ -204,19 +204,40 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.contact-item a, .social-links a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.contact-item a:hover, .social-links a:hover {
+  color: var(--accent-color);
+}
+
 .social-links {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
-.social-links a {
-  color: var(--accent-color);
-  font-size: 2rem;
-  margin: 0 1rem;
-  transition: color 0.3s ease;
+.social-link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.social-links a:hover {
-  color: #a89266;
+.social-link-container a {
+  color: var(--text-color);
+}
+
+.social-link-label {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+.social-link-label a {
+  color: var(--text-color) !important;
 }
 
 footer {
